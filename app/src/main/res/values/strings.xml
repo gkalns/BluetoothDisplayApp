@@ -4,4 +4,5 @@
     <string name="button_connect">Connect</string>
     <string name="not_connected">Status: Not connected</string>
     <string name="notvalid">Not valid</string>
+    <string name="clear_button">Clear</string>
 </resources>

@@ -19,36 +19,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:maxLength="4"
-        android:ems="10"
-        android:id="@+id/number_input"
-        android:layout_below="@+id/button_connect"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textHex"
-        android:text="000"
-        android:layout_below="@+id/number_input"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_send"
-        android:id="@+id/button_send"
-        android:layout_below="@+id/number_input"
-        android:layout_alignStart="@+id/button_connect"
-        android:layout_marginTop="139dp" />
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,5 +26,27 @@
         android:id="@+id/textStatus"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <com.example.gundars.mytestapplication.DrawingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+        android:layout_below="@+id/button_connect"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@+id/button"
+        android:layout_above="@+id/button"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_button"
+        android:id="@+id/button"
+        android:layout_above="@+id/textStatus"
+        android:layout_centerHorizontal="true"
+        android:onClick="clearGrid"/>
+
 
 </RelativeLayout>
